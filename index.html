@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="http://icons.iconarchive.com/icons/thehoth/seo/256/seo-penguin-icon.png" />
+    <link href="CSS/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="JS/jquery.min.js"></script>
+    <script src="JS/external.js"></script>
+    <title>
+        Penguin Pop-Up
+    </title>
+</head>
+
+<body>
+    <audio id="backgroundsound" autoplay loop>
+      <source src="media/mario_odyssey_city.mp3" type="audio/mp3">
+      <source src="media/mario_odyssey_city.wav" type="audio/wav">     
+   </audio>
+    <audio id="yetisound">
+       <source src="media/Tiger%20Growling-SoundBible.com-258880045.mp3" type="audio/mp3">
+       <source src="media/Tiger%20Growling-SoundBible.com-258880045.wav" type="audio/wav">
+   </audio>
+    <audio id="jumpsound">
+       <source src="media/Jump-SoundBible.com-1007297584.mp3" type="audio/mp3">
+       <source src="media/Jump-SoundBible.com-1007297584.wav" type="audio/wav">
+   </audio>
+    <div id="title"></div>
+    <div id="gameholder">
+        <div id="gameboard">
+            <div id="shuffle">
+                <div id="slot1" class="" onmousedown="jump();"></div>
+                <div id="slot2" class="" onmousedown="jump();"></div>
+                <div id="slot3" class="" onmousedown="jump();"></div>
+                <div id="slot4" class="" onmousedown="jump();"></div>
+                <div id="slot5" class="" onmousedown="jump();"></div>
+                <div id="slot6" class="" onmousedown="jump();"></div>
+                <div id="slot7" class="" onmousedown="jump();"></div>
+                <div id="slot8" class="" onmousedown="jump();"></div>
+                <div id="slot9" class="" onmousedown="sound();"></div>
+            </div>
+        </div>
+        <aside id="gameInfo">
+            <div>
+                <h2>Score</h2>
+                <div class="scoreContainer">
+                    <div class="scorePadding"></div>
+                    <div class="scoreboard"><input id="scoreCount" type="text" value="0" readonly placeholder="00"></div>
+                    <div class="scorePadding"></div>
+                </div>
+            </div>
+        </aside>
+        <aside id="highScore">
+            <div>
+                <h2>High-Score</h2>
+                <div class="scoreContainer">
+                    <div class="scorePadding"></div>
+                    <div class="scoreboard"><input id="highscoreCount" type="text" value="0" readonly placeholder="00"></div>
+                    <div class="scorePadding"></div>
+                </div>
+            </div>
+        </aside>
+    </div>
+</body>
+
+</html>
